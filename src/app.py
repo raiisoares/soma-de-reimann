@@ -2,12 +2,12 @@ from RiemannSum import RiemannSum
 from sympy import parse_expr
 from PySimpleGUI import PySimpleGUI as gui
 
-gui.theme("Reddit")
+gui.theme("DarkGrey5")
 layout = [
-  [gui.Text("Informe o valor de a: "), gui.Input(key="min", size=(10, 1))],
-  [gui.Text("Informe o valor de b: "), gui.Input(key="max", size=(10, 1))],
-  [gui.Text("Informe o número de intervalos: "), gui.Input(key="n", size=(10, 1))],
-  [gui.Text("Informe o f(x): "),gui.Input(key="fx", size=(20, 1))],
+  [gui.Text("Informe o valor de a: ", size=(15, 1), justification="right"), gui.Input(key="min", size=(20, 1))],
+  [gui.Text("Informe o valor de b: ", size=(15, 1), justification="right"), gui.Input(key="max", size=(20, 1))],
+  [gui.Text("Número de intervalos: ", size=(15, 1), justification="right"), gui.Input(key="n", size=(20, 1))],
+  [gui.Text("Informe o f(x): ", size=(15, 1), justification="right"),gui.Input(key="fx", size=(20, 1))],
   [gui.Button("Calcular")],
 ]
 
